@@ -1,0 +1,120 @@
+site_name: Danish
+site_author: Danish
+site_description: >-
+  This site contains Danish's work and his 2 cents about everything.
+repo_name: dan10ish.github.io
+repo_url: https://github.com/dan10ish/dan10ish.github.io
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Inter
+    code: Roboto Mono
+  icon:
+    logo: simple/gnometerminal
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    theme:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  palette:
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: white
+      accent: light blue
+
+    # Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: black
+      accent: light blue
+
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+copyright: Copyright &copy; 2024 Danish Ansari
+
+plugins:
+  - blog:
+      post_date_format: dd/MM/YYYY
+      post_url_format: "{slug}"
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+
+nav:
+  - Home:
+      - Introductions: "index.md"
+      - Writing: "blog/index.md"
+      - Books: "reading.md"
+      - Contact: "contact.md"
+  - Writing:
+      - "blog/index.md"
+  - Builds: "projects/index.md"
+
+extra:
+  analytics:
+    provider: google
+    property: G-761SWXMNKK
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/dan10ish
+      name: dan10ish on X
+    - icon: fontawesome/brands/github
+      link: https://github.com/dan10ish
+      name: dan10ish on GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/dan10ish
+      name: dan10ish on Instagram
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/dan10ish
+      name: dan10ish on LinkedIn
